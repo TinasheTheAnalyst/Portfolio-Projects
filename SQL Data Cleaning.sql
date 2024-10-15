@@ -67,11 +67,11 @@ SELECT *,
 Row_Number() OVER(
 Partition  By ParcelID,
               PropertyAddress,
-			  SaleDate,
-			  SalePrice,
-			  LegalReference,
-			  OwnerName
-			  Order by UniqueID
+	      SaleDate,
+	      SalePrice,
+	      LegalReference,
+	      OwnerName
+	      Order by UniqueID
               )row_num
 
 FROM NashvilleHousing
